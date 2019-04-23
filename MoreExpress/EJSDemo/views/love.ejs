@@ -1,0 +1,15 @@
+<% include partials/header %>
+
+
+<h1>You fell in live with: <%= thingVar.toUpperCase() %></h1>
+
+<%# = adds to html, no = used for logic %>
+<% if(thingVar.toLowerCase() === "rusty") { %>
+    <p>GOOD CHOICE!</p>
+<% } else { %>
+    <p>BAD CHOICE</p>
+<% } %>
+
+<p>P.S. this is the love.ejs file</p>
+
+<% include partials/footer %>
